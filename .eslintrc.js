@@ -3,6 +3,7 @@ module.exports = {
     'airbnb',
     'airbnb/hooks',
     'airbnb-typescript',
+    'plugin:tailwindcss/recommended',
     'next/core-web-vitals',
   ],
   parserOptions: {
@@ -16,6 +17,8 @@ module.exports = {
     '@typescript-eslint/no-unnecessary-type-assertion': ['warn'],
     '@typescript-eslint/no-require-imports': ['warn'],
     '@typescript-eslint/no-unused-vars': ['warn'],
+    'tailwindcss/classnames-order': ['off'],
+    'arrow-body-style': ['off'],
     '@typescript-eslint/object-curly-spacing': ['off'],
     'react/jsx-props-no-spreading': ['off'],
     '@typescript-eslint/comma-dangle': ['off'],

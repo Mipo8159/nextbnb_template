@@ -1,7 +1,7 @@
 import type {AppProps} from 'next/app'
 import {DefaultSeo} from 'next-seo'
+import {appWithTranslation} from 'next-i18next'
 import Layout from '../components/layout'
-
 import '../styles/globals.scss'
 
 function MyApp({Component, pageProps}: AppProps) {
@@ -19,4 +19,4 @@ function MyApp({Component, pageProps}: AppProps) {
   )
 }
 
-export default MyApp
+export default appWithTranslation(MyApp)
