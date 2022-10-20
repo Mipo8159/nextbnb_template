@@ -9,6 +9,12 @@ function Menu() {
       <li>
         <Link href="/about">About</Link>
       </li>
+      <li>
+        <Link href="/posts">Posts</Link>
+      </li>
+      <li>
+        <Link href="/users">users</Link>
+      </li>
     </ul>
   )
 }

@@ -6,8 +6,7 @@
 
 # Code quality:
 
-- npm run lint
-- npm run lint -- --fix
+- absolute imports prefix "@src"
 
 # VsCode Plugins
 
@@ -17,4 +16,7 @@
 - Prettier
 - Eslint
 
-# misc
+# misc cmds
+
+- npm run lint
+- npm run lint -- --fix

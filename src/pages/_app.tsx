@@ -1,10 +1,13 @@
 import type {AppProps} from 'next/app'
 import {DefaultSeo} from 'next-seo'
 import {appWithTranslation} from 'next-i18next'
-import Layout from '../components/layout'
-import '../styles/globals.scss'
+import Layout from '@src/components/layout'
+import '@src/styles/main.scss'
+import {wrapper} from '@src/store/store'
+import {Provider} from 'react-redux'
 
-function MyApp({Component, pageProps}: AppProps) {
+function MyApp({Component, ...rest}: AppProps) {
+  const {store, props} = wrapper.useWrappedStore(rest)
   return (
     <>
       <DefaultSeo
@@ -13,7 +16,9 @@ function MyApp({Component, pageProps}: AppProps) {
         description="Default description"
       />
       <Layout>
-        <Component {...pageProps} />
+        <Provider store={store}>
+          <Component {...props.pageProps} />
+        </Provider>
       </Layout>
     </>
   )

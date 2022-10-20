@@ -1,8 +1,8 @@
+import {LanguageAlternateType} from '@src/types/LanguageAlternate.type'
+import HomeView from '@src/views/home'
 import type {NextPage, GetStaticProps} from 'next'
 import {serverSideTranslations} from 'next-i18next/serverSideTranslations'
 import {NextSeo} from 'next-seo'
-import {LanguageAlternateType} from '../types/LanguageAlternate.type'
-import HomeView from '../views/home'
 
 /* SERVER */
 export const getStaticProps: GetStaticProps = async (ctx) => {

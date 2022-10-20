@@ -24,6 +24,8 @@ module.exports = {
     '@typescript-eslint/comma-dangle': ['off'],
     '@typescript-eslint/semi': ['off'],
     '@typescript-eslint/interface-name-prefix': ['off'],
+    'react/jsx-one-expression-per-line': ['off'],
+    '@typescript-eslint/indent': ['off'],
     'object-curly-newline': ['off'],
   },
 }
