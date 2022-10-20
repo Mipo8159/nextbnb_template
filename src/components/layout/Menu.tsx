@@ -13,7 +13,7 @@ function Menu() {
         <Link href="/posts">Posts</Link>
       </li>
       <li>
-        <Link href="/users">users</Link>
+        <Link href="/todos">todos</Link>
       </li>
     </ul>
   )

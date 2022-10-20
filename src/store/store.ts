@@ -1,10 +1,13 @@
 import {Action, configureStore, ThunkAction} from '@reduxjs/toolkit'
 import {createWrapper} from 'next-redux-wrapper'
 import postReducer from './post/post.reducer'
+import {todoApi} from './todo/todoApi'
 
 // prettier-ignore
 const makeStore = () => configureStore({
-    reducer: {post: postReducer},
+    reducer: {post: postReducer,
+    [todoApi.reducerPath]: todoApi.reducer},
+    middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(todoApi.middleware),
     devTools: true,
   })
 
